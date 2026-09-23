@@ -108,7 +108,7 @@ Rules
 </main>
 <nav class="pp" aria-label="Prototype navigation">
 <a class="nav" id="pp-prev" href="#" aria-label="Previous screen">&#8592;</a>
-<div class="label"><b id="pp-name">Sign in</b><span id="pp-count">1 / 23</span></div>
+<div class="label"> <b id="pp-name">Dashboard — table</b><span id="pp-count">4 / 23</span></span></div>
 <a class="nav" id="pp-next" href="#" aria-label="Next screen">&#8594;</a>
 <button type="button" id="pp-toggle" aria-expanded="false" aria-controls="pp-menu">All screens</button>
 </nav>
@@ -302,7 +302,7 @@ function fit(sec) {
 }
 function current() {
   const h = (location.hash || '').replace('#', '');
-  return ORDER.indexOf(h) >= 0 ? h : ORDER[0];
+     return ORDER.indexOf(h) >= 0 ? h : 'dashboard';
 }
 function show() {
   const cur = current();
